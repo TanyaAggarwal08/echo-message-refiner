@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Echo</title>
+  <link rel="stylesheet" href="popup.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header class="app-header">
+      <div class="brand">
+        <div class="logo-icon">✨</div>
+        <h1>Echo</h1>
+      </div>
+      <p class="subtitle">AI-powered message refiner.</p>
+    </header>
+
+    <main class="content-wrapper">
+      <section class="section">
+        <label class="section-label">Select Tone</label>
+        <div class="options-grid" role="radiogroup">
+          
+          <label class="tone-card">
+            <input type="radio" name="toneChoice" value="polite" checked>
+            <div class="card-inner">
+              <span class="emoji">🌿</span>
+              <span class="tone-name">Polite</span>
+            </div>
+          </label>
+
+          <label class="tone-card">
+            <input type="radio" name="toneChoice" value="formal">
+            <div class="card-inner">
+              <span class="emoji">💼</span>
+              <span class="tone-name">Formal</span>
+            </div>
+          </label>
+
+          <label class="tone-card">
+            <input type="radio" name="toneChoice" value="casual">
+            <div class="card-inner">
+              <span class="emoji">🤝</span>
+              <span class="tone-name">Casual</span>
+            </div>
+          </label>
+
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="label-row">
+          <label for="text" class="section-label">Original Message</label>
+        </div>
+        <textarea id="text" placeholder="Type or paste your message here..." spellcheck="false"></textarea>
+      </section>
+
+      <div class="main-actions">
+        <button id="apply" class="btn-primary">
+          <span class="btn-text">Generate Suggestion</span>
+        </button>
+      </div>
+
+      <section class="section output-section">
+        <label for="output" class="section-label">Refined Message</label>
+        <div class="textarea-wrapper">
+          <textarea id="output" placeholder="Your transformed message will appear here..." readonly></textarea>
+          <button id="save" class="btn-icon-copy" title="Copy to clipboard">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="app-footer">
+      <p>Refine your communication instantly.</p>
+    </footer>
+
+    <div id="toast" class="toast">Copied to clipboard!</div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
