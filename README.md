@@ -1,4 +1,5 @@
-# <img src="icon128.png" align="center" width="40"> Echo: AI Message Refiner
+# Echo: AI Message Refiner
+Bridge the gap between raw thought and polished communication
 
 <p align="left">
   <img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
@@ -7,13 +8,14 @@
   <img src="https://img.shields.io/badge/Chrome-Extension-orange" />
 </p>
 
-**Echo** is a sophisticated message-refining browser extension that acts as a garnish for your messages. It transforms raw drafts into polished communication, ensuring your English is sharp, clear, and perfectly suited for the recipient.
+**Echo** is a sophisticated message-refining browser extension that acts as a garnish for your messages. It transforms raw thoughts into polished communication, ensuring your English is perfectly suited for the recipient.
 
 ---
 
 ## ✨ Key Highlights
 
-- **Garnish Effect:** Reflects your thoughts back in three distinct, curated tones.
+- **Voice-to-Tone Dictation:** Integrated Web Speech API allows for hands-free drafting. Speak your messy thoughts, and Echo transcribes and refines them in one go.
+- **Garnish Effect:** Reflects your thoughts back in three distinct, curated tones which reflect you and not AI.
 - **Context-Aware:** Not just a grammar checker; it "re-draws" sentences for impact.
 - **Seamless Workflow:** One-click copy to clipboard with instant visual confirmation.
 - **Modern UI:** Built with a SaaS-inspired grid layout and haptic-style feedback.
@@ -37,6 +39,9 @@ Built with **Python & Flask**, the backend serves as a secure bridge to **GitHub
 
 ### Frontend Experience
 A lightweight **ES6+ JavaScript** core manages asynchronous states, providing a "Processing..." indicator during AI inference and a "Copied! ✨" state for the clipboard.
+Web Speech API: Leveraged for real-time, cloud-based voice transcription.
+CSS3 Animations: Custom @keyframes used to create a "Sonar Pulse" effect, providing non-intrusive haptic-style visual feedback during active recording.
+SVG Architecture: Transitioned from bitmap emojis to vector graphics (SVGs) to ensure UI consistency and crispness across high-DPI displays.
 
 ---
 
@@ -81,9 +86,10 @@ A lightweight **ES6+ JavaScript** core manages asynchronous states, providing a 
     └── README.md           # Project documentation
 
 ## 🔧 Troubleshooting
-1. Port 5000 Conflict (macOS)
+
+3. Port 5000 Conflict (macOS)
 Disable AirPlay Receiver in System Settings, or change the port in app.py to 5001.
 
-2. CORS Error
+4. CORS Error
 Ensure flask-cors is installed and properly initialized in app.py.
 
