@@ -3,8 +3,12 @@
   "name": "Echo - Message Refiner",
   "version": "1.0",
   "description": "Your intent, perfectly reflected.",
-  "permissions": ["activeTab", "scripting", "storage"],
-  "host_permissions": ["<all_urls>"],
+"permissions": [
+  "activeTab", 
+  "scripting", 
+  "storage"
+],
+  "host_permissions": ["https://echo-backend-69zh.onrender.com/*"],
   "action": {
     "default_popup": "main.html"
   }
