@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -7,6 +8,7 @@
   <link rel="stylesheet" href="popup.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <div class="container">
     <header class="app-header">
@@ -21,7 +23,7 @@
       <section class="section">
         <label class="section-label">Select Tone</label>
         <div class="options-grid" role="radiogroup">
-          
+
           <label class="tone-card">
             <input type="radio" name="toneChoice" value="polite" checked>
             <div class="card-inner">
@@ -50,10 +52,13 @@
       </section>
 
       <section class="section">
-        <div class="label-row">
-          <label for="text" class="section-label">Original Message</label>
+        <label for="text" class="section-label">Original Message</label>
+        <div class="textarea-container">
+          <textarea id="text" placeholder="Type, paste, or speak your message..." spellcheck="false"></textarea>
+          <button id="micBtn" class="mic-inside-btn" title="Speak message">
+            <span id="micIcon">🎤︎︎</span>
+          </button>
         </div>
-        <textarea id="text" placeholder="Type or paste your message here..." spellcheck="false"></textarea>
       </section>
 
       <div class="main-actions">
@@ -67,7 +72,11 @@
         <div class="textarea-wrapper">
           <textarea id="output" placeholder="Your transformed message will appear here..." readonly></textarea>
           <button id="save" class="btn-icon-copy" title="Copy to clipboard">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
             Copy
           </button>
         </div>
@@ -83,4 +92,5 @@
 
   <script src="popup.js"></script>
 </body>
+
 </html>
