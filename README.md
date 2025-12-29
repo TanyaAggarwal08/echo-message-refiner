@@ -1,4 +1,4 @@
-# <img src="icon128.png" align="center" width="40"> Echo: AI Message Refiner
+Echo: AI Message Refiner
 
 <p align="left">
   <img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
@@ -7,16 +7,15 @@
   <img src="https://img.shields.io/badge/Chrome-Extension-orange" />
 </p>
 
-**Echo** is a sophisticated message-refining browser extension that acts as a garnish for your messages. It transforms raw drafts into polished communication, ensuring your English is sharp, clear, and perfectly suited for the recipient.
+**Echo** is a sophisticated message-refining browser extension that acts as a garnish for your messages. It transforms raw drafts (text as well as speech) into polished communication, ensuring your English is sharp, clear, and perfectly suited for the recipient.
 
 ---
 
-## ✨ Key Highlights
+## ✨ Key Features
 
-- **Garnish Effect:** Reflects your thoughts back in three distinct, curated tones.
-- **Context-Aware:** Not just a grammar checker; it "re-draws" sentences for impact.
+- **Voice-to-Refined-Text:** Capture user input via voice and refine the spoken message into the selected tone in real-time.
+- **Garnish Effect:** The Garnish Effect: Echo doesn't rewrite your message from scratch; it "garnishes" it. By preserving your core intent and personal vocabulary, the AI adjusts the tone while ensuring the final message still sounds like you—just the best version of you.
 - **Seamless Workflow:** One-click copy to clipboard with instant visual confirmation.
-- **Modern UI:** Built with a SaaS-inspired grid layout and haptic-style feedback.
 
 ---
 
