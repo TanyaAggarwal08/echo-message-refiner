@@ -8,7 +8,7 @@
   "scripting", 
   "storage"
 ],
-  "host_permissions": ["https://echo-backend-69zh.onrender.com/*"],
+  "host_permissions": ["https://echo-backend-jet.vercel.app/*"],
   "action": {
     "default_popup": "main.html"
   }

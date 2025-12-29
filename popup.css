@@ -303,9 +303,9 @@ textarea[readonly] {
 }
 
 
-#micIcon {         /* Sets the color to pure black */
-  font-size: 1.2rem;       /* Adjusts the size to match your UI */
-  font-style: normal;      /* Ensures it doesn't tilt */
+#micIcon {    
+  font-size: 1.2rem;   
+  font-style: normal;      
   display: inline-block;
   vertical-align: middle;
   filter: grayscale(100%) brightness(0);
@@ -329,5 +329,5 @@ textarea[readonly] {
 .textarea-container {
   position: relative;
   display: flex;
-  overflow: visible; /* Ensures the sonar rings aren't clipped */
+  overflow: visible; 
 }

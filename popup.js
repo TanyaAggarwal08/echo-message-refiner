@@ -86,7 +86,7 @@ async function runTone() {
   outputEl.value = "Refining...";
 
   try {
-    const res = await fetch("https://echo-backend-69zh.onrender.com/run", {
+    const res = await fetch("https://echo-backend-jet.vercel.app/run", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ text: textEl.value, tone: toneEl.value })
